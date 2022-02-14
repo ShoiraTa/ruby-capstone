@@ -10,27 +10,25 @@ class Main
         1 - List all books
         2 - List all music albums
         3 - List all movies
-        4 - List of games
-        5 - List all genres (e.g "Comedy", "Thriller")
-        6 - List all labels (e.g "Gift", "New")
-        7 - List all authors (e.g "Stephan King")
-        8 - List all sources (e.g "From a friend", "online shop")
-        9 - Add a book
-        10 - Add music album
-        11 - Add a game
-        12 - Add a movie
-        13 - Exit
+        4 - List all genres (e.g "Comedy", "Thriller")
+        5 - List all labels (e.g "Gift", "New")
+        6 - List all authors (e.g "Stephan King")
+        7 - Add a book
+        8 - Add music album
+        9 - Add a movie
+        10 - Exit
         '
   end
 
   def start
     input = 0
     puts 'Hello'
-    while input.to_i < 12
+    while input.to_i < 10
       options
       input = gets.chomp
       @app.options_cases(input)
     end
+    puts 'Thank you, bye!'
   end
 end
 
