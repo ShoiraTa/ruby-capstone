@@ -21,16 +21,15 @@ class Main
         12 - Add a movie
         13 - Exit
         '
-
-
     end
 
     def start
     input = 0
         puts 'Hello'
-        while input < 12
+        while input.to_i < 12
             options
-        input = gets.chomp.to_i
+        input = gets.chomp
+        @app.options_cases(input)
         end
     end
 end
