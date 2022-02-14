@@ -1,12 +1,12 @@
 require './app'
 
 class Main
-    def initialize
-        @app = App.new
-    end
+  def initialize
+    @app = App.new
+  end
 
-    def options
-        puts 'Please select 1 option below
+  def options
+    puts 'Please select 1 option below
         1 - List all books
         2 - List all music albums
         3 - List all movies
@@ -21,19 +21,18 @@ class Main
         12 - Add a movie
         13 - Exit
         '
-    end
+  end
 
-    def start
+  def start
     input = 0
-        puts 'Hello'
-        while input.to_i < 12
-            options
-        input = gets.chomp
-        @app.options_cases(input)
-        end
+    puts 'Hello'
+    while input.to_i < 12
+      options
+      input = gets.chomp
+      @app.options_cases(input)
     end
+  end
 end
-
 
 main = Main.new
 main.start
