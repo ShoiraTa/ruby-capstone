@@ -27,6 +27,7 @@ class Main
       input = gets.chomp
       @app.options_cases(input)
     end
+    @app.create_music_album
     puts 'Thank you, bye!'
   end
 end

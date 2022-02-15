@@ -1,10 +1,10 @@
 require './item'
-require './music_album'
-require './music_album_module'
+require './classes/music_album'
+require './modules/music_album_module'
 
 class App
   include MusicAlbumModule
-  
+
   def initialize
     @music_albums = load_music_albums
   end
@@ -26,7 +26,7 @@ class App
     when '7'
       puts 'create_book'
     when '8'
-      puts 'create_music_album'
+      add_music_album
     when '9'
       puts 'create_movies'
     end
@@ -39,6 +39,18 @@ class App
     end
   end
   
-end
+  def add_music_album
+    puts 'Album name: '
+    name = gets.chomp
 
+    puts 'Date of publish [Enter date in format (yyyy-mm-dd)]'
+    publish_date = gets.chomp
+
+    puts 'Is it available on Spotify? Y/N'
+    on_spotify = gets.chomp.downcase == 'y' || false
+
+    @music_albums.push(MusicAlbum.new(name, publish_date, on_spotify))
+    puts "Music album created"
+  end
+end
 

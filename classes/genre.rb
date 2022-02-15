@@ -1,8 +1,8 @@
 class Genre
-  attr_accessor :name, :id, :arr_i
+  attr_accessor :name, :arr_i
 
   def initialize(id, name)
-    @id = id
+    @id = id || Random.rand(1..1000)
     @name = name
     @arr_i = []
   end
