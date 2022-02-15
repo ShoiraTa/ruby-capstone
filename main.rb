@@ -22,12 +22,12 @@ class Main
 
   def start
     input = 0
-    puts 'Hello'
     while input.to_i < 10
       options
       input = gets.chomp
       @app.options_cases(input)
     end
+    @app.create_music_album
     puts 'Thank you, bye!'
   end
 end

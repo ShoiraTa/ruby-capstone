@@ -1,8 +1,15 @@
 require './item'
+require './classes/music_album'
+require './classes/genre'
+require './modules/music_album_module'
+require './modules/genres_module'
 
 class App
+  include MusicAlbumModule
+
   def initialize
-    @item_archive = Item.new(1, 'name', 'genre', 'author', 'label', '01.01.2001')
+    @music_albums = load_music_albums
+    @load_genres = load_genres
   end
 
   def options_cases(user_input)
@@ -10,11 +17,11 @@ class App
     when '1'
       puts 'list_books'
     when '2'
-      puts 'list_music_albums'
+      list_all_music_album
     when '3'
       puts 'list_games'
     when '4'
-      puts 'list_genres'
+      list_all_genres
     when '5'
       puts 'list_labels'
     when '6'
@@ -22,10 +29,37 @@ class App
     when '7'
       puts 'create_book'
     when '8'
-      puts 'create_music_album'
+      add_music_album
     when '9'
       puts 'create_movies'
     end
   end
-  puts(@item_archive)
+
+  def list_all_music_album
+    puts 'Music Albums'
+    @music_albums.each do |music_album|
+      puts "Name: #{music_album.name}, Publish Date: #{music_album.publish_date}, On Spotify: #{music_album.on_spotify}"
+    end
+  end
+
+  def list_all_genres
+    puts 'Genres'
+    @load_genres.each do |genre|
+      puts "Genre name: #{genre.name}"
+    end
+  end
+
+  def add_music_album
+    puts 'Album name: '
+    name = gets.chomp
+
+    puts 'Date of publish [Enter date in format (yyyy-mm-dd)]'
+    publish_date = gets.chomp
+
+    puts 'Is it available on Spotify? Y/N'
+    on_spotify = gets.chomp.downcase == 'y' || false
+
+    @music_albums.push(MusicAlbum.new(name, publish_date, on_spotify))
+    puts 'Music album created'
+  end
 end
