@@ -12,7 +12,7 @@ class App
     when '2'
       puts 'list_music_albums'
     when '3'
-      puts 'list_movies'
+      puts 'list_games'
     when '4'
       puts 'list_genres'
     when '5'
