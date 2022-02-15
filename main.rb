@@ -22,7 +22,6 @@ class Main
 
   def start
     input = 0
-    puts 'Hello'
     while input.to_i < 10
       options
       input = gets.chomp
