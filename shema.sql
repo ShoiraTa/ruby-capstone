@@ -1,26 +1,5 @@
 CREATE DATABASE catalog;
 
-CREATE TABLE authors (
-    id  INT GENERATED ALWAYS AS IDENTITY,
-    first_name VARCHAR(100),
-    last_name VARCHAR(100),
-    PRIMARY KEY(id)
-);
-
-CREATE TABLE genres (
-    id  INT GENERATED ALWAYS AS IDENTITY,
-    name VARCHAR(100),
-    PRIMARY KEY(id)
-);
-
-
-CREATE TABLE labels (
-    id  INT GENERATED ALWAYS AS IDENTITY,
-    title VARCHAR(100),
-    color VARCHAR(100),
-    PRIMARY KEY(id)
-);
-
 CREATE TABLE item (
     id  INT GENERATED ALWAYS AS IDENTITY,
     genre_id INT,
@@ -34,13 +13,12 @@ CREATE TABLE item (
     FOREIGN KEY (label_id) REFERENCES labels (id)
 );
 
-CREATE TABLE books (
-    id  INT,
-    title VARCHAR(100),
-    publisher VARCHAR(100),
-    cover_state VARCHAR(100),
-    FOREIGN KEY(id) REFERENCES item(id)
+CREATE TABLE genres (
+    id  INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100),
+    PRIMARY KEY(id)
 );
+
 
 CREATE TABLE music_albums (
     id  INT,
@@ -49,10 +27,10 @@ CREATE TABLE music_albums (
     FOREIGN KEY(id) REFERENCES item(id)
 );
 
+-- CREATE TABLE authors 
+-- CREATE TABLE labels 
 
-CREATE TABLE games (
-    id  INT,
-    multiplayer BOOLEAN,
-    last_played_at DATE,
-    FOREIGN KEY(id) REFERENCES item(id)
-);
+
+
+-- CREATE TABLE games
+-- CREATE TABLE books 
