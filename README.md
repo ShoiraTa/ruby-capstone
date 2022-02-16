@@ -42,8 +42,6 @@ or
 
 ![Shoira's GitHub stats](https://github-readme-stats.vercel.app/api?username=shoirata&count_private=true&theme=dark&show_icons=true)
 
-👤 **Grace**
-
 
 👤 **Munsa Mibenge**
 
@@ -54,10 +52,12 @@ or
 
 ![Munsa's GitHub stats](https://github-readme-stats.vercel.app/api?username=Munsa1&count_private=true&theme=dark&show_icons=true)
 
+👤 **Grace**
+
 - GitHub: [@gracekabaghe](https://github.com/gracekabaghe)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/grace-kabaghe)
 
-👤 **Munsa**
+![Grace's GitHub stats](https://github-readme-stats.vercel.app/api?username=gracekabaghe&count_private=true&theme=dark&show_icons=true)
 
 
 
