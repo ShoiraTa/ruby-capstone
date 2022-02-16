@@ -16,6 +16,3 @@ class Book < Item
     super || @cover_state == 'bad'
   end
 end
-
-book = Book.new('title', 'publisher', 'good', '2002-01-01')
-puts book

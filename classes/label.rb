@@ -14,6 +14,3 @@ class Label
     item.genre = self
   end
 end
-
-label = Label.new('1', 'title', 'color')
-puts label
