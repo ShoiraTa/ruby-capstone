@@ -13,8 +13,4 @@ class Author
     @items.push(item)
     item.add_author(self)
   end
-
-  def to_s
-    "#{@first_name} #{@last_name}"
-  end
 end
