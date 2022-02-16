@@ -3,18 +3,18 @@ require './classes/music_album'
 require './classes/genre'
 require './classes/book'
 require './classes/label'
-require './classes/author'
+# require './classes/author'
 require './modules/music_album_module'
 require './modules/genres_module'
 require './modules/book_module'
 require './modules/label_module'
-require './modules/author_module'
+# require './modules/author_module'
 
 class App
   include MusicAlbumModule
   include BooksDataController
   include LabelsDataController
-  include AuthorModule
+  # include AuthorModule
 
   def initialize
     @books = load_books
@@ -22,7 +22,7 @@ class App
     @load_genres = load_genres
     @add_book_details = load_books
     @labels = load_labels
-    @author = load_author
+    # @author = load_author
   end
 
   def options_cases(user_input)
