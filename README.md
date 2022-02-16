@@ -44,6 +44,9 @@ or
 
 👤 **Grace**
 
+- GitHub: [@gracekabaghe](https://github.com/gracekabaghe)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/grace-kabaghe)
+
 👤 **Munsa**
 
 
