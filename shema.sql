@@ -37,7 +37,6 @@ CREATE TABLE labels (
 );
 
 
-
 -- CREATE TABLE games
 -- CREATE TABLE books 
 CREATE TABLE books (
@@ -47,4 +46,5 @@ CREATE TABLE books (
     cover_state VARCHAR(100),
     FOREIGN KEY(id) REFERENCES item(id)
 );
+
 

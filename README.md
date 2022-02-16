@@ -44,10 +44,21 @@ or
 
 👤 **Grace**
 
+
+👤 **Munsa Mibenge**
+
+- GitHub: [@Munsa1](https://github.com/Munsa1/school-lib)
+- Twitter: [@MibengeMunsa](https://twitter.com/MibengeMunsa)
+- LinkedIn: [Munsa Mibenge](https://www.linkedin.com/in/munsa-mibenge/)
+
+
+![Munsa's GitHub stats](https://github-readme-stats.vercel.app/api?username=Munsa1&count_private=true&theme=dark&show_icons=true)
+
 - GitHub: [@gracekabaghe](https://github.com/gracekabaghe)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/grace-kabaghe)
 
 👤 **Munsa**
+
 
 
 ## Acknowledgments

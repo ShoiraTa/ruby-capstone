@@ -1,20 +1,28 @@
 require './item'
 require './classes/music_album'
+require './classes/game'
 require './classes/genre'
+
 require './classes/book'
 require './classes/label'
 require './modules/music_album_module'
 require './modules/genres_module'
 require './modules/book_module'
 require './modules/label_module'
+require './modules/games_module'
+require './modules/authors_module'
 
 class App
   include MusicAlbumModule
   include BooksDataController
   include LabelsDataController
+  include GamesModule
+  include AuthorsModule
 
   def initialize
     @books = load_books
+    @authors = load_authors
+    @games = load_games
     @music_albums = load_music_albums
     @load_genres = load_genres
     @add_book_details = load_books
@@ -28,7 +36,7 @@ class App
     when '2'
       list_all_music_album
     when '3'
-      puts 'list_games'
+      list_all_games
     when '4'
       list_all_genres
     when '5'
@@ -40,7 +48,7 @@ class App
     when '8'
       add_music_album
     when '9'
-      puts 'create_movies'
+      add_game
     end
   end
 
@@ -51,10 +59,26 @@ class App
     end
   end
 
+  def list_all_games
+    puts 'Music Albums:'
+    @games.each do |games|
+      puts "Multiplayer: #{games.multiplayer}, Publish Date: #{games.publish_date},
+      Last played date: #{games.last_played_date}"
+    end
+  end
+
   def list_all_genres
-    puts 'Genres'
+    puts 'Genres:'
     @load_genres.each do |genre|
       puts "Genre name: #{genre.name}"
+    end
+  end
+
+  def list_all_authors
+    puts 'Authors:'
+    @authors.each do |author|
+      puts "First Name: #{author.first_name} "
+      puts "Last Name: #{author.last_name} "
     end
   end
 
@@ -70,6 +94,20 @@ class App
 
     @music_albums.push(MusicAlbum.new(name, publish_date, on_spotify))
     puts 'Music album created'
+  end
+
+  def add_game
+    puts 'Please write multiplayer: '
+    multiplayer = gets.chomp
+
+    puts 'Please write date of publish [Enter date in format (yyyy-mm-dd)]'
+    publish_date = gets.chomp
+
+    puts 'Please write last played date [Enter date in format (yyyy-mm-dd)]'
+    last_played_date = gets.chomp
+
+    @games.push(Game.new(multiplayer, publish_date, last_played_date))
+    puts 'Game is created'
   end
 
   def add_book
@@ -105,8 +143,8 @@ class App
   end
 
   def list_authors
-    puts 'There are no authors yet!' if @author.empty?
-    @author.each do |author|
+    puts 'There are no authors yet!' if @authors.empty?
+    @authors.each do |author|
       puts "first name: #{author.first_name}, last name #{author.last_name}}"
     end
   end

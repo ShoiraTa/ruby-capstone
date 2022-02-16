@@ -28,6 +28,7 @@ class Main
       @app.options_cases(input)
     end
     @app.create_music_album
+    @app.create_games
     puts 'Thank you, bye!'
   end
 end
