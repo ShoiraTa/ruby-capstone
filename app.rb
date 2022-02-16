@@ -96,7 +96,6 @@ class App
     puts 'Music album created'
   end
 
-
   def add_game
     puts 'Please write multiplayer: '
     multiplayer = gets.chomp
@@ -109,8 +108,9 @@ class App
 
     @games.push(Game.new(multiplayer, publish_date, last_played_date))
     puts 'Game is created'
+  end
 
- def add_book
+  def add_book
     print 'Please, type the book title: '
     title = gets.chomp
 
@@ -143,10 +143,9 @@ class App
   end
 
   def list_authors
-    puts 'There are no authors yet!' if @author.empty?
-    @author.each do |author|
+    puts 'There are no authors yet!' if @authors.empty?
+    @authors.each do |author|
       puts "first name: #{author.first_name}, last name #{author.last_name}}"
     end
-
   end
 end
