@@ -29,8 +29,22 @@ CREATE TABLE music_albums (
 
 -- CREATE TABLE authors 
 -- CREATE TABLE labels 
+CREATE TABLE labels (
+    id  INT GENERATED ALWAYS AS IDENTITY,
+    title VARCHAR(100),
+    color VARCHAR(100),
+    PRIMARY KEY(id)
+);
 
 
 
 -- CREATE TABLE games
 -- CREATE TABLE books 
+CREATE TABLE books (
+    id  INT,
+    title VARCHAR(100),
+    publisher VARCHAR(100),
+    cover_state VARCHAR(100),
+    FOREIGN KEY(id) REFERENCES item(id)
+);
+
