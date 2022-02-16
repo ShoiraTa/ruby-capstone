@@ -53,7 +53,8 @@ class App
   def list_all_games
     puts 'Music Albums:'
     @games.each do |games|
-      puts "Multiplayer: #{games.multiplayer}, Publish Date: #{games.publish_date}, Last played date: #{games.last_played_date}"
+      puts "Multiplayer: #{games.multiplayer}, Publish Date: #{games.publish_date},
+      Last played date: #{games.last_played_date}"
     end
   end
 
