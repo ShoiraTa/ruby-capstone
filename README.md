@@ -44,7 +44,11 @@ or
 
 👤 **Grace**
 
-👤 **Munsa**
+👤 **Munsa Mibenge**
+
+- GitHub: [@Munsa1](https://github.com/Munsa1/school-lib)
+- Twitter: [@MibengeMunsa](https://twitter.com/MibengeMunsa)
+- LinkedIn: [Munsa Mibenge](https://www.linkedin.com/in/munsa-mibenge/)
 
 
 ## Acknowledgments
