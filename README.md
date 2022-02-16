@@ -51,6 +51,9 @@ or
 - LinkedIn: [Munsa Mibenge](https://www.linkedin.com/in/munsa-mibenge/)
 
 
+![Munsa's GitHub stats](https://github-readme-stats.vercel.app/api?username=Munsa1&count_private=true&theme=dark&show_icons=true)
+
+
 ## Acknowledgments
 
 - Microverse
