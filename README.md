@@ -19,19 +19,43 @@ This app is develped in ruby and allows users to:
 - rvm
 - Rspec
 
-## Getting Started
+## `Getting Started`
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy of this project:
 
-- go to the directory that you want to clone the repository in.
-- right click and choose Git Bash here.
-- type "git clone https://github.com/ShoiraTa/ruby-capstone.git".
-- go to the repository folder in your command prompt.
-- run bundle install.
+Clone this repository or download the Zip folder:
+```
+git clone https://github.com/ShoiraTa/ruby-capstone.git
+```
 
-or
+To get started, In the root directory run:
+```
+gem install bundler
+```
+Then run:
+```
+bundle install
+```
+run ruby app in the Command Line:
+```
+ruby main.rb
+```
 
-- Go to the dist folder and open index.html
+### Run tests
+
+- Open the terminal and run `rspec spec spec/filename.rb`
+
+
+### To track linter errors locally follow these steps:  
+
+Track Ruby linter errors run:
+```
+rubocop
+```
+To auto-correct Rubocop offenses run:
+```
+rubocop --auto-correct-all | rubocop -A
+```
 
 ## Authors
 
@@ -41,8 +65,6 @@ or
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/shoira-tashpulatova-bab4a7122/)
 
 ![Shoira's GitHub stats](https://github-readme-stats.vercel.app/api?username=shoirata&count_private=true&theme=dark&show_icons=true)
-
-
 
 
 👤 **Munsa Mibenge**
@@ -60,8 +82,6 @@ or
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/grace-kabaghe)
 
 ![Grace's GitHub stats](https://github-readme-stats.vercel.app/api?username=gracekabaghe&count_private=true&theme=dark&show_icons=true)
-
-
 
 
 ## Acknowledgments

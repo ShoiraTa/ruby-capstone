@@ -1,4 +1,4 @@
-require './classes/label'
+require_relative '../classes/label'
 require 'json'
 require 'date'
 

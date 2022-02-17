@@ -1,5 +1,5 @@
 require 'json'
-require './classes/author'
+require_relative '../classes/author'
 
 module AuthorsModule
   def load_authors

@@ -1,4 +1,4 @@
-require './classes/genre'
+require_relative '../classes/genre'
 
 require 'yaml'
 

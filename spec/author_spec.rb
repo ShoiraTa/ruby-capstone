@@ -1,4 +1,4 @@
-require './classes/author'
+require_relative '../classes/author'
 
 require 'yaml'
 

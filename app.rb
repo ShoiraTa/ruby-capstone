@@ -1,16 +1,16 @@
-require './item'
-require './classes/music_album'
-require './classes/game'
-require './classes/genre'
+require_relative './item'
+require_relative './classes/music_album'
+require_relative './classes/game'
+require_relative './classes/genre'
 
-require './classes/book'
-require './classes/label'
-require './modules/music_album_module'
-require './modules/genres_module'
-require './modules/book_module'
-require './modules/label_module'
-require './modules/games_module'
-require './modules/authors_module'
+require_relative './classes/book'
+require_relative './classes/label'
+require_relative './modules/music_album_module'
+require_relative './modules/genres_module'
+require_relative './modules/book_module'
+require_relative './modules/label_module'
+require_relative './modules/games_module'
+require_relative './modules/authors_module'
 
 class App
   include MusicAlbumModule

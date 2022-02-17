@@ -1,4 +1,4 @@
-require './classes/game'
+require_relative '../classes/game'
 
 require 'yaml'
 

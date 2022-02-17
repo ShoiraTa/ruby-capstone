@@ -1,5 +1,5 @@
 require 'json'
-require './classes/game'
+require_relative '../classes/game'
 
 module GamesModule
   def load_games
