@@ -15,11 +15,11 @@ module BooksDataController
   end
 
   def save_books
-    # data = []
-    # @books.each do |book|
-    #   data.push({ name: book.name, publisher: book.publisher, cover_state: book.cover_state,
-    #               publish_date: book.publish_date })
-    # end
-    # File.write('./json_files/books.json', JSON.generate(data))
+    data = []
+    @books.each do |book|
+      data.push({ name: book.name, publisher: book.publisher, cover_state: book.cover_state,
+                  publish_date: book.publish_date })
+    end
+    File.write('./json_files/books.json', JSON.generate(data))
   end
 end

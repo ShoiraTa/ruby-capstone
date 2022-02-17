@@ -29,6 +29,7 @@ class Main
     end
     @app.create_music_album
     @app.create_games
+    @app.save_books
     puts 'Thank you, bye!'
   end
 end
